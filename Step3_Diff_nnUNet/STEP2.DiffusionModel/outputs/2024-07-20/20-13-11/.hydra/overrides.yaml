@@ -1,0 +1,8 @@
+- dataset.name=liver_tumor_train
+- dataset.fold=0
+- dataset.data_root_path=D:/projects/DiffTumor/diffusion_data/img/
+- dataset.label_root_path=D:/projects/DiffTumor/diffusion_data/GT/
+- dataset.dataset_list=['liver_tumor_data_early_fold']
+- dataset.uniform_sample=False
+- model.results_folder_postfix=liver_early_tumor_fold0
+- model.vqgan_ckpt=D:/projects/DiffTumor/STEP2.DiffusionModel/pretrained_models/AutoencoderModel.ckpt

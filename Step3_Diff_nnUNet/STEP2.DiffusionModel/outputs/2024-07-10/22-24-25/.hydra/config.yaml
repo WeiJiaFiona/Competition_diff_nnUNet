@@ -1,0 +1,57 @@
+dataset:
+  name: liver_tumor_train
+  image_channels: 1
+  fold: 0
+  dataset_list:
+  - liver_tumor_data_early_fold
+  data_root_path: D:/projects/DiffTumor/diffusion_data/img/
+  label_root_path: D:/projects/DiffTumor/diffusion_data/GT/
+  data_txt_path: cross_eval/
+  dist: false
+  batch_size: 1
+  a_min: -175
+  a_max: 250
+  b_min: -1.0
+  b_max: 1.0
+  space_x: 1.0
+  space_y: 1.0
+  space_z: 1.0
+  roi_x: 96
+  roi_y: 96
+  roi_z: 96
+  num_samples: 10
+  phase: train
+  uniform_sample: false
+  datasetkey:
+  - '10_03'
+  cache_dataset: true
+  cache_rate: 1.0
+model:
+  vqgan_ckpt: D:/projects/DiffTumor/STEP2.DiffusionModel/pretrained_models/AutoencoderModel.ckpt
+  diffusion_img_size: 24
+  diffusion_depth_size: 24
+  diffusion_num_channels: 17
+  out_dim: 8
+  dim_mults:
+  - 1
+  - 2
+  - 4
+  - 8
+  results_folder: checkpoints/ddpm/
+  results_folder_postfix: liver_early_tumor_fold0
+  load_milestone: false
+  batch_size: 2
+  logger: wandb
+  objective: pred_x0
+  save_and_sample_every: 1000
+  denoising_fn: Unet3D
+  train_lr: 0.0001
+  timesteps: 4
+  sampling_timesteps: 250
+  loss_type: l1
+  train_num_steps: 10
+  gradient_accumulate_every: 2
+  ema_decay: 0.995
+  amp: false
+  num_sample_rows: 1
+  gpus: 0

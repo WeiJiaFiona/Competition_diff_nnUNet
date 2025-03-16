@@ -1,0 +1,1 @@
+img\000_0000.nii.gz       liver_label\000.nii.gz

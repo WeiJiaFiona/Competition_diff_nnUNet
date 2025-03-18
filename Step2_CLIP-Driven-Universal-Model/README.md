@@ -18,10 +18,6 @@ python pred_pseudo.py --data_root_path PATH_TO_IMG_DIR --result_save_path PATH_T
  - 🔥 We collect recent medical universal models in [AWESOME MEDICAL UNIVERSAL MODEL](documents/awesome.md) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re).
  - 😎 We have document for [common questions for code](documents/common_code_questions.md) and [common questions for paper](documents/common_paper_questions.md).
 
-# CLIP-Driven Universal Model
-
-<img src="teaser_fig.png" width = "480" height = "345" alt="" align=center />
-
 ## Paper
 This repository provides the official implementation of Universal Model.
 

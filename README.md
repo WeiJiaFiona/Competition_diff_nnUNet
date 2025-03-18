@@ -24,15 +24,14 @@
 
 ### (4) 代码复现<br>
 #### 1. 比赛官方数据集下载地址
-训练集 链接： https://pan.baidu.com/s/1WxeMniaDTNdpZVEY-GUfgA
+* 训练集 链接： https://pan.baidu.com/s/1WxeMniaDTNdpZVEY-GUfgA
 提取码： w2ux
-外部测试集 链接： https://pan.baidu.com/s/1X4rlAz5JL5MEE8t4_FKaLQ
+* 外部测试集 链接： https://pan.baidu.com/s/1X4rlAz5JL5MEE8t4_FKaLQ
 提取码： oe1f<br>
 #### 2. 我们本次比赛训练的权重<br>
-半监督补全nnUNet权重 链接： https://pan.baidu.com/s/1gXjOJtfCVSf2qZ8frir0Nw?pwd=cuc3
+* 半监督补全nnUNet权重 链接： https://pan.baidu.com/s/1gXjOJtfCVSf2qZ8frir0Nw?pwd=cuc3
 提取码： cuc3
-最终用于预测测试集的Diff-nnUNet权重 链接：https://pan.baidu.com/s/18RxT0ncf44yG6xRHsLU4LA?pwd=3bfq
-提取码： oe1f<br>
+* 最终用于预测测试集的Diff-nnUNet权重 链接：https://pan.baidu.com/s/18RxT0ncf44yG6xRHsLU4LA?pwd=3bfq
 #### 3. 训练你的模型<br>
 * **肿瘤数据集统计分析**： 
 `tumor_statistics`文件夹下含肿瘤物理直径、体积、球型度的统计
@@ -53,7 +52,6 @@
 <img src="imgs\internal_test_statitics.png" alt="Internal Test Statistics" width="500"><br>
 <img src="imgs\vis1.png" alt="vis1" width="500"><br>
 <img src="imgs\vis2.png" alt="vis1" width="500"><br>
-<!-- ![vis1](imgs\vis1.png)
-![vis2](imgs\vis2.png) -->
+
 #### (6) 项目总结
 本项目通过补全标注与合成数据提升了数据的质量与数量，进行消融实验验证了核心设计的有效性，并在外部测试集上获得优异表现，再次说明了**Deep learning is data-driven**的底层逻辑。

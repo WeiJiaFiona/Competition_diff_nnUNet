@@ -1,5 +1,5 @@
 # 比赛README
-* 本次比赛中CLIP-Driven-Universal-Moden的用途：分割出肝脏掩码，Diffusion训练和生成的过程中都会使用此掩码在肝脏上合成肿瘤
+* 本次比赛中CLIP-Driven-Universal-Model的用途：分割出肝脏Mask。Diffusion训练和生成的过程中都会使用此掩码在肝脏上合成肿瘤
 * 环境安装：根据以下官网README指示，但请注意monai版本必须为0.9.0，其他库的版本请根据实际情况调整
 * 预测肝脏Mask步骤
     * 下载预训练权重：wget https://www.dropbox.com/s/jdsodw2vemsy8sz/swinunetr.pth 并将模型放至路径CLIP-Driven-Universal-Model/ pretrained_weights/下
@@ -12,7 +12,7 @@ python pred_pseudo.py --data_root_path PATH_TO_IMG_DIR --result_save_path PATH_T
 
 
 
-# 官网上模型使用指南
+# [官方](https://github.com/ljwztc/CLIP-Driven-Universal-Model)模型使用指南
 # News
  - 🔥 The pseudo-label with manual refienment could be found in [AbdonmenAtlas 1.0](https://github.com/MrGiovanni/AbdomenAtlas)
  - 🔥 We collect recent medical universal models in [AWESOME MEDICAL UNIVERSAL MODEL](documents/awesome.md) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re).
